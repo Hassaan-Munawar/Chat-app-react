@@ -1,6 +1,6 @@
 🌟 Introducing My Project: A Real-Time Chat App 🌟
 
-I’m excited to share my newest project, a fully responsive and feature-rich chat application built with React.js and Firebase. This app offers a seamless and modern communication experience, taking advantage of real-time functionalities and a clean UI.
+I’m excited to share my project, a fully responsive and feature-rich chat application built with React.js and Firebase. This app offers a seamless and modern communication experience, taking advantage of real-time functionalities and a clean UI.
 
 🔑 Key Features:
 
@@ -27,5 +27,3 @@ Tailwind CSS: Used for designing a clean, modern, and mobile-responsive user int
 JavaScript​: Core functionality powered by JavaScript for handling user actions, messaging, and profile management.
 
 This project has been a great learning experience, allowing me to deepen my skills in React, Firebase, and modern front-end development. I’m excited about the potential of this app and looking forward to building upon it further.
-
-🔗 Check it out live here: https://lnkd.in/d4QNyJsH
