@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { createUserWithEmailAndPassword, getAuth, sendPasswordResetEmail, signInWithEmailAndPassword, signOut } from "firebase/auth"
-import { collection, getDocs, getFirestore, query, doc ,  setDoc, where } from "firebase/firestore"
+import { collection, getDocs, getFirestore, query, doc, setDoc, where } from "firebase/firestore"
 import { toast } from "react-toastify";
 
 const firebaseConfig = {
@@ -44,7 +44,6 @@ const signup = async (username, email, password) => {
 const login = async (email, password) => {
   try {
     await signInWithEmailAndPassword(auth, email, password)
-
   } catch (error) {
     console.error(error)
     toast.error(error.code.split('/')[1].split('-').join(" "))
@@ -91,4 +90,4 @@ const resetPass = async (email) => {
 
 }
 
-export { signup, login, logout, auth, db ,resetPass}
+export { signup, login, logout, auth, db, resetPass }

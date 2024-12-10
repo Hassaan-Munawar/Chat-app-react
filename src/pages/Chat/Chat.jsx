@@ -16,7 +16,7 @@ const Chat = () => {
   return (
     <div className='chat'>
       {
-        loading ? <p className='loading'>Loading...</p> : <div className="chat-container">
+        loading ? <div className='loader'></div> : <div className="chat-container">
           <LeftSidebar />
           <ChatBox />
           <RightSidebar />
