@@ -117,7 +117,7 @@ const ChatBox = () => {
     return chatUser ? (
         <div className={`chat-box ${chatVisible ? "" : "hidden"}`}>
             <div className="chat-user">
-                <img src={chatUser.userData.avatar} alt="" />
+                <img onClick={() => window.open(chatUser.userData.avatar)} src={chatUser.userData.avatar} alt="" />
                 <p>
                     {chatUser.userData.name}
                 </p>
@@ -127,9 +127,9 @@ const ChatBox = () => {
             <div className="chat-msg">
                 {messages.map((msg, index) => (
                     <div key={index} className={msg.sId === userData.id ? "s-msg" : "r-msg"}>
-                        {msg.image ? <img src={msg.image} className='msg-img' alt="" /> : <p className='msg'>{msg.text}</p>}
+                        {msg.image ? <img src={msg.image} onClick={() => window.open(msg.image)} className='msg-img' alt="" /> : <p className='msg'>{msg.text}</p>}
                         <div>
-                            <img src={msg.sId === userData.id ? userData.avatar : chatUser.userData.avatar} alt="" />
+                            <img onClick={() => window.open(msg.sId === userData.id ? userData.avatar : chatUser.userData.avatar)} src={msg.sId === userData.id ? userData.avatar : chatUser.userData.avatar} alt="" />
                             <p>{convertTimeStamp(msg.createdAt)}</p>
                         </div>
                     </div>

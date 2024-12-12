@@ -15,7 +15,12 @@
 
 .chat-user img {
     width: 25px;
+    object-fit: cover;
     border-radius: 50%;
+}
+
+.chat-user img:hover{
+    cursor: pointer;
 }
 
 .chat-user img:first-child {
@@ -77,6 +82,11 @@
     width: 40px;
     aspect-ratio: 1/1;
     border-radius: 50%;
+    object-fit: cover;
+}
+
+.r-msg div img,.s-msg div img:hover{
+    cursor: pointer;
 }
 
 .s-msg,
@@ -118,6 +128,10 @@
     max-width: 230px;
     margin-bottom: 40px;
     border-radius: 10px;
+}
+
+.msg-img:hover{
+    cursor: pointer;
 }
 
 .chat-welcome{

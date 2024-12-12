@@ -15,6 +15,7 @@
 
 .rs-profile img{
     width: 110px;
+    object-fit: cover;
     aspect-ratio: 1/1;
     border-radius: 50%;
     cursor: pointer;
@@ -60,6 +61,7 @@
     width: 90px;
     height: 50px;
     border-radius: 4px;
+    object-fit: cover;
     cursor: pointer;
 }
 

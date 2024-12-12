@@ -21,6 +21,7 @@
     aspect-ratio: 1/1;
     margin: 20px auto;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .profile form{
