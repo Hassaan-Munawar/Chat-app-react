@@ -22,10 +22,10 @@ const signup = async (username, email, password) => {
     const user = res.user;
     await setDoc(doc(db, "users", user.uid), {
       id: user.uid,
-      username: username.toLowerCase(),
+      username: username.toLowerCase().trim(),
       email,
-      name: "",
-      avatar: "",
+      name: username,
+      avatar: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
       bio: "Hey, There I am using chat app",
     })
     await setDoc(doc(db, "chats", user.uid), {
